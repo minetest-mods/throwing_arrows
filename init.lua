@@ -1,5 +1,8 @@
 -- Translation support
 local S = minetest.get_translator("throwing_arrows")
+if minetest.get_modpath("toolranks") then
+	toolranks.register_extra_tool_type("bow", S("bow"))
+end
 
 local function register_bow_craft(name, itemcraft)
 	minetest.register_craft({

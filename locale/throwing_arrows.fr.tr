@@ -26,3 +26,6 @@ Drop Arrow=Flèche de livraison
 
 ## Warnings
 [throwing] BUG: node at @1 was not air=[throwing] BUG : le bloc à @1 n’était pas de l’air
+
+## Toolranks support
+bow=arc
