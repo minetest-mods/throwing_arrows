@@ -1,6 +1,14 @@
 # Bows and Arrows for Throwing
 
-This mod registers basic bows and arrows for the [throwing API](https://github.com/MT-Eurythmia/throwing). It makes `throwing` a compatible replacement for the throwing mod by PilzAdam.
+This mod registers basic bows and arrows for the [throwing API](https://github.com/minetest-mods/throwing).
+This is a compatible replacement for the [throwing mod by PilzAdam](https://forum.luanti.org/viewtopic.php?t=2805).
+
+**Links:**
+
+* [ContentDB](https://content.luanti.org/packages/minetest-mods/throwing_arrows)
+* [Luanti Forums topic](https://forum.luanti.org/viewtopic.php?t=16365)
+
+**Licenses:** See [LICENSE.txt](LICENSE.txt)
 
 ## Settings
 

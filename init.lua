@@ -114,7 +114,14 @@ end
 if get_setting("arrow") then
 	throwing.register_arrow("throwing:arrow", {
 		description = S("Arrow"),
-		tiles = {"throwing_arrow.png", "throwing_arrow.png", "throwing_arrow_back.png", "throwing_arrow_front.png", "throwing_arrow_2.png", "throwing_arrow.png"},
+		tiles = {
+			"throwing_arrow.png",
+			"throwing_arrow.png",
+			"throwing_arrow_back.png",
+			"throwing_arrow_front.png",
+			"throwing_arrow_2.png",
+			"throwing_arrow.png"
+		},
 		target = throwing.target_both,
 		allow_protected = true,
 		mass = 1,
@@ -127,7 +134,7 @@ if get_setting("arrow") then
 					damage_groups = {fleshy = 3}
 				})
 			elseif node then
-				if node.name == "mesecons_button:button_off" and minetest.get_modpath("mesecons_button") and minetest.get_modpath("mesecons") then
+				if node.name == "mesecons_button:button_off" and minetest.get_modpath("mesecons_button") then
 					minetest.registered_items["mesecons_button:button_off"].on_rightclick(vector.round(pos), node)
 				end
 			end
@@ -139,7 +146,14 @@ end
 if get_setting("golden_arrow") then
 	throwing.register_arrow("throwing:arrow_gold", {
 		description = S("Golden Arrow"),
-		tiles = {"throwing_arrow_gold.png", "throwing_arrow_gold.png", "throwing_arrow_gold_back.png", "throwing_arrow_gold_front.png", "throwing_arrow_gold_2.png", "throwing_arrow_gold.png"},
+		tiles = {
+			"throwing_arrow_gold.png",
+			"throwing_arrow_gold.png",
+			"throwing_arrow_gold_back.png",
+			"throwing_arrow_gold_front.png",
+			"throwing_arrow_gold_2.png",
+			"throwing_arrow_gold.png"
+		},
 		target = throwing.target_object,
 		allow_protected = true,
 		on_hit_sound = "throwing_arrow",
@@ -158,7 +172,14 @@ end
 if get_setting("diamond_arrow") then
 	throwing.register_arrow("throwing:arrow_diamond", {
 		description = S("Diamond Arrow"),
-		tiles = {"throwing_arrow_diamond.png", "throwing_arrow_diamond.png", "throwing_arrow_diamond_back.png", "throwing_arrow_diamond_front.png", "throwing_arrow_diamond_2.png", "throwing_arrow_diamond.png"},
+		tiles = {
+			"throwing_arrow_diamond.png",
+			"throwing_arrow_diamond.png",
+			"throwing_arrow_diamond_back.png",
+			"throwing_arrow_diamond_front.png",
+			"throwing_arrow_diamond_2.png",
+			"throwing_arrow_diamond.png"
+		},
 		target = throwing.target_object,
 		allow_protected = true,
 		on_hit_sound = "throwing_arrow",
@@ -177,7 +198,14 @@ end
 if get_setting("dig_arrow") then
 	throwing.register_arrow("throwing:arrow_dig", {
 		description = S("Dig Arrow"),
-		tiles = {"throwing_arrow_dig.png", "throwing_arrow_dig.png", "throwing_arrow_dig_back.png", "throwing_arrow_dig_front.png", "throwing_arrow_dig_2.png", "throwing_arrow_dig.png"},
+		tiles = {
+			"throwing_arrow_dig.png",
+			"throwing_arrow_dig.png",
+			"throwing_arrow_dig_back.png",
+			"throwing_arrow_dig_front.png",
+			"throwing_arrow_dig_2.png",
+			"throwing_arrow_dig.png"
+		},
 		target = throwing.target_node,
 		mass = 1,
 		on_hit_sound = "throwing_dig_arrow",
@@ -191,7 +219,14 @@ end
 if get_setting("dig_arrow_admin") then
 	throwing.register_arrow("throwing:arrow_dig_admin", {
 		description = S("Admin Dig Arrow"),
-		tiles = {"throwing_arrow_dig.png", "throwing_arrow_dig.png", "throwing_arrow_dig_back.png", "throwing_arrow_dig_front.png", "throwing_arrow_dig_2.png", "throwing_arrow_dig.png"},
+		tiles = {
+			"throwing_arrow_dig.png",
+			"throwing_arrow_dig.png",
+			"throwing_arrow_dig_back.png",
+			"throwing_arrow_dig_front.png",
+			"throwing_arrow_dig_2.png",
+			"throwing_arrow_dig.png"
+		},
 		target = throwing.target_node,
 		mass = 1,
 		on_hit = function(self, pos, _, node, _, _)
@@ -204,7 +239,14 @@ end
 if get_setting("teleport_arrow") then
 	throwing.register_arrow("throwing:arrow_teleport", {
 		description = S("Teleport Arrow"),
-		tiles = {"throwing_arrow_teleport.png", "throwing_arrow_teleport.png", "throwing_arrow_teleport_back.png", "throwing_arrow_teleport_front.png", "throwing_arrow_teleport_2.png", "throwing_arrow_teleport.png"},
+		tiles = {
+			"throwing_arrow_teleport.png",
+			"throwing_arrow_teleport.png",
+			"throwing_arrow_teleport_back.png",
+			"throwing_arrow_teleport_front.png",
+			"throwing_arrow_teleport_2.png",
+			"throwing_arrow_teleport.png"
+		},
 		allow_protected = true,
 		mass = 1,
 		on_hit_sound = "throwing_teleport_arrow",
@@ -227,7 +269,14 @@ end
 if get_setting("fire_arrow") then
 	throwing.register_arrow("throwing:arrow_fire", {
 		description = S("Torch Arrow"),
-		tiles = {"throwing_arrow_fire.png", "throwing_arrow_fire.png", "throwing_arrow_fire_back.png", "throwing_arrow_fire_front.png", "throwing_arrow_fire_2.png", "throwing_arrow_fire.png"},
+		tiles = {
+			"throwing_arrow_fire.png",
+			"throwing_arrow_fire.png",
+			"throwing_arrow_fire_back.png",
+			"throwing_arrow_fire_front.png",
+			"throwing_arrow_fire_2.png",
+			"throwing_arrow_fire.png"
+		},
 		mass = 1,
 		on_hit_sound = "default_place_node",
 		on_hit = function(self, pos, last_pos, _, _, hitter)
@@ -256,7 +305,14 @@ end
 if get_setting("build_arrow") then
 	throwing.register_arrow("throwing:arrow_build", {
 		description = S("Build Arrow"),
-		tiles = {"throwing_arrow_build.png", "throwing_arrow_build.png", "throwing_arrow_build_back.png", "throwing_arrow_build_front.png", "throwing_arrow_build_2.png", "throwing_arrow_build.png"},
+		tiles = {
+			"throwing_arrow_build.png",
+			"throwing_arrow_build.png",
+			"throwing_arrow_build_back.png",
+			"throwing_arrow_build_front.png",
+			"throwing_arrow_build_2.png",
+			"throwing_arrow_build.png"
+		},
 		mass = 1,
 		on_hit_sound = "throwing_build_arrow",
 		on_hit = function(self, pos, last_pos, _, _, hitter)
@@ -285,7 +341,14 @@ end
 if get_setting("drop_arrow") then
 	throwing.register_arrow("throwing:arrow_drop", {
 		description = S("Drop Arrow"),
-		tiles = {"throwing_arrow_drop.png", "throwing_arrow_drop.png", "throwing_arrow_drop_back.png", "throwing_arrow_drop_front.png", "throwing_arrow_drop_2.png", "throwing_arrow_drop.png"},
+		tiles = {
+			"throwing_arrow_drop.png",
+			"throwing_arrow_drop.png",
+			"throwing_arrow_drop_back.png",
+			"throwing_arrow_drop_front.png",
+			"throwing_arrow_drop_2.png",
+			"throwing_arrow_drop.png"
+		},
 		on_hit_sound = "throwing_build_arrow",
 		allow_protected = true,
 		mass = 1,
